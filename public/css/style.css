@@ -1,0 +1,307 @@
+@font-face {
+  font-family: "OpenSans-Bold";
+   src: url("../font/OpenSans-Bold.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-BoldItalic";
+   src: url("../font/OpenSans-BoldItalic.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-ExtraBold";
+   src: url("../fontOpenSans-ExtraBold.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-ExtraBoldItalic";
+   src: url("../font/OpenSans-ExtraBoldItalic.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-Italic";
+   src: url("../font/OpenSans-Italic.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-Light";
+   src: url("../font/OpenSans-Light.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-LightItalic";
+   src: url("../font/OpenSans-LightItalic.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-Regular";
+   src: url("../font/OpenSans-Regular.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-Semibold";
+   src: url("../font/OpenSans-Semibold.ttf") format("truetype");
+ }
+
+ @font-face {
+   font-family: "OpenSans-SemiboldItalic";
+   src: url("../font/OpenSans-SemiboldItalic.ttf") format("truetype");
+ }
+
+a[href], button, .pointer {
+  cursor: pointer;
+}
+
+body{
+  font-family: OpenSans-Regular;
+  margin: 0;
+  position: relative;
+}
+
+nav {
+  background: #351354;
+  height: 38px;
+  width: 100%;
+}
+
+nav .container {
+  height: 38px;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+ul li {
+  cursor: pointer;
+  list-style: none;
+}
+
+#cart-list {
+  /*background:#f90;*/
+  background: #1B1A20;
+  color: #FFF;
+  min-height: 1200px;
+  padding: 17px;
+  position: fixed;
+  right: -510px;
+  top: 0;
+  transition: right .5s;
+  width: 475px;
+  z-index: 1000;
+}
+
+#cart-list.open {
+  right: 0;
+}
+
+#cart-list h2{
+  float: left;
+  left: 47%;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 13%;
+  width: 80px;
+}
+
+#cart-list img {
+  width: 50px;
+}
+
+#cart-list ul {
+  padding: 0;
+}
+
+#cart-list ul li {
+  border-bottom: 3px solid #131316;
+  float: left;
+  height: 55px;
+  padding: 17px 0 17px 15px;
+}
+
+#cart-list ul li:last-child {
+  border-bottom: 0px solid #131316;
+}
+
+#cart-list ul li span {
+  float: left;
+  font-size: 14px;
+  width: 340px;
+}
+
+#cart-list .cart-item-price {
+  bottom: 7px;
+  color: #ab8b02;
+  float: left;
+  font-family: OpenSans-Bold;
+  position: absolute;
+  width: 32px;
+}
+
+#cart-list .cart-item-size,
+#cart-list .cart-item-qtd {
+  color: #6E6E71;
+  font-size: 12px;
+}
+
+#cart-list .thumb{
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+}
+
+.badge {
+  background: #dfbd00;
+  border-radius: 59px;
+  color: #000;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  height: 20px;
+  left: 39%;
+  padding: 1px;
+  position: absolute;
+  text-align: center;
+  top: 28px;
+  width: 20px;
+}
+
+.details {
+  display: block;
+  float: left;
+  padding-left: 10px;
+  position: relative;
+  width: 395px;
+}
+
+.details .action-area:hover {
+  cursor: pointer;
+}
+
+.details .action-area span.remove-bt {
+  color: #000;
+  font-family: OpenSans-Bold;
+  font-size: 19px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  width: 32px;
+}
+
+.details .action-area:hover span.remove-bt {
+  color: #fff;
+  cursor: pointer;
+  width: 32px;
+}
+
+.has-items {
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+}
+
+.has-items .lock {
+  background-image: url(/images/cadeado_sacola.png);
+  background-size: 70%;
+  background-position: center;
+  float: left;
+  height: 40px;
+  right: 0;
+  width: 33px;
+}
+
+.header-cart {
+  border-bottom: 3px solid #131316;
+  height: 52px;
+  position: relative;
+  width: 486px;
+}
+
+.header-cart .lock {
+  background-image: url(/images/cadeado_sacola.png);
+  float: left;
+  height: 40px;
+  left: 35%;
+  position: absolute;
+  width: 33px;
+}
+
+.item-installment,
+.item-price,
+.item-title,
+.wrap-hr{
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+.item-installment {
+  color: #A6A6A6;
+  font-family: OpenSans-regular;
+  font-size: 12px;
+}
+
+.item-price b {
+  font-family: OpenSans-Bold;
+  font-size: 26px;
+}
+
+.product-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.product-list figure {
+  margin: 0 auto;
+  padding-bottom: 9px;
+}
+
+.product-list figure img {
+  display: block;
+  height: 230px;
+  margin-left: auto;
+  margin-right: auto
+  width: 180px;
+}
+
+.product-list hr {
+  border-top: 2px solid #EABB00;;
+  margin: 0 auto;
+  width: 13px;
+}
+
+.product-list li {
+  float: left;
+  padding: 0 3% 58px 0;
+  width: 220px;
+}
+
+.product-list .item-title {
+  color: #47464A;
+  font-size: 14px;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  margin-bottom: 7px;
+}
+
+.toogle-cart {
+  color: #000;
+  font-family: OpenSans-Bold;
+  font-size: 19px;
+}
+
+.toogle-cart:hover {
+  color: #fff;
+  cursor: pointer;
+  width: 32px;
+}
+
+.store{
+  margin: 50px auto;
+  max-width: 1000px;
+  overflow: hidden;
+  width: 100%;
+}

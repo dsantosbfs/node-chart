@@ -1,0 +1,23 @@
+{
+  "name": "netshoes-challenge",
+  "version": "1.0.0",
+  "description": "Aplicativo de teste para Netshoes",
+  "main": "app.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11",
+    "request": "^2.78.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "seeder": "node seeder/mongo-setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsantosbfs/test-netshoes.git"
+  },
+  "author": "Danilo Santos <dsantosbfs@gmail.com>",
+  "license": "ISC"
+}
